@@ -1,6 +1,8 @@
 .number_con {
     height: 300px;
-    background-color: #0085FF;
+    background: #7474BF;
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    background: linear-gradient(to right, #348AC7, #7474BF);
     display: flex;
     justify-content: center;
     align-items: center;

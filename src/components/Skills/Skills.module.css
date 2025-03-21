@@ -1,6 +1,9 @@
 .skills_con {
+    margin-top: 30px;
     height: 300px;
-    background-color: #0085FF;
+    background: #7474BF;
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    background: linear-gradient(to right, #348AC7, #7474BF);
     text-align: center;
     color: #fff;
     overflow: hidden;

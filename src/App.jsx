@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { createGlobalStyle } from 'styled-components';
 
 // External Libs
 import AnimatedCursor from "react-animated-cursor"
@@ -17,11 +16,20 @@ import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
+// Global Styles
+const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: 'Prompt', sans-serif !important;
+  }
+`;
 
+function App() {
   return (
     <>
+      {/* Apply Global Styles */}
+      <GlobalStyle />
+
+      {/* Custom Animated Cursor */}
       <AnimatedCursor
         innerSize={8}
         outerSize={8}
@@ -30,6 +38,7 @@ function App() {
         innerScale={1.5}
         outerStyle={{
           border: '3px solid #fff',
+          zIndex: 9999,
         }}
         outerScale={5}
         clickables={[
@@ -46,6 +55,8 @@ function App() {
           '.link'
         ]}
       />
+
+      {/* Main Components */}
       <Navbar />
       <Hero />
       <Skills />
@@ -59,4 +70,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

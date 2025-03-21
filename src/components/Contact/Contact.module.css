@@ -1,6 +1,8 @@
 .contact_wrapper {
+    background: #7474BF;
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    background: linear-gradient(to right, #348AC7, #7474BF);
     height: 500px;
-    background-color: #0085FF;
     color: #fff;
     overflow: hidden;
 
@@ -94,7 +96,8 @@
         & .contact_con {
             flex-direction: column;
 
-            & .contact_info, & .contact_form {
+            & .contact_info,
+            & .contact_form {
                 width: 100%;
                 padding: 20px;
             }
