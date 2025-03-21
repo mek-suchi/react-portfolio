@@ -12,37 +12,38 @@ function Navbar() {
 
   return (
     <nav>
-        <div className={styles.container}>
-          <div className={styles.nav_con}>
-            <div className={styles.logo}>
-              <a href="#">Web port</a>
-            </div>
-            <ul>
-              <li><a href="#services">Skills</a></li>
+      <div className={styles.container}>
+        <div className={styles.nav_con}>
+          <div className={styles.logo}>
+            <a href="#">Portfolio</a>
+          </div>
+          <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#services">ทักษะ</a></li>
+            <li><a href="#portfolio">โปรเจค</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+          </ul>
+          <div className={styles.button}>
+            <a href="#">Hire Me</a>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <FaBars className={styles.bars} onClick={handleToggle} />
+        {isToggled ? (
+          <>
+            <ul className={styles.mobile_menu}>
+              <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-            <div className={styles.button}>
+            <div className={styles.mobile_button}>
               <a href="#">Hire Me</a>
             </div>
-          </div>
+          </>
+        ) : null}
 
-          {/* Mobile Menu */}
-          <FaBars className={styles.bars} onClick={handleToggle} />
-          {isToggled ? (
-            <>
-              <ul className={styles.mobile_menu}>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-              <div className={styles.mobile_button}>
-                <a href="#">Hire Me</a>
-              </div>
-            </>
-          ) : null}
-
-        </div>
+      </div>
     </nav>
   )
 }

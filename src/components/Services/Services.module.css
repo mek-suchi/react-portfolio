@@ -22,15 +22,11 @@
             & svg {
                 width: 80px;
                 height: 80px;
-                color: #7474BF;
-                color: -webkit-linear-gradient(to right, #348AC7, #7474BF);
-                color: linear-gradient(to right, #348AC7, #7474BF);
+                color: #56CCF2;
             }
 
             & h4 {
-                color: #7474BF;
-                color: -webkit-linear-gradient(to right, #348AC7, #7474BF);
-                color: linear-gradient(to right, #348AC7, #7474BF);
+                color: #56CCF2;
                 font-size: 24px;
                 font-weight: bold;
                 margin: 25px 0;

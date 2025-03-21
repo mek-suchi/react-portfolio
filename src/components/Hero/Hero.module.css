@@ -21,9 +21,9 @@
             & .text_2 {
                 font-size: 64px;
                 font-weight: bold;
-                color: #7474BF;
-                color: -webkit-linear-gradient(to right, #348AC7, #7474BF);
-                color: linear-gradient(to right, #348AC7, #7474BF);
+                background: linear-gradient(to right, #2F80ED, #56CCF2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
             & .text_3 {
