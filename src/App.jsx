@@ -60,6 +60,8 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
+      <Skills bgColor="linear-gradient(to right, #f12711, #f5af19)" />
+      <Skills />
       <Services />
       <Portfolio />
       <Number />

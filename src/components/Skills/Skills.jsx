@@ -4,9 +4,13 @@ import { FaVuejs, FaReact, FaGitAlt, FaNode, FaPhp } from 'react-icons/fa6'
 import { SiExpress, SiMysql, SiTailwindcss } from "react-icons/si";
 import Tilt from 'react-parallax-tilt';
 
-function Skills() {
+function Skills({ bgColor }) {
   return (
-    <div id='skills' className={styles.skills_con}>
+    <div
+      id='skills'
+      className={styles.skills_con}
+      style={{ background: bgColor }}
+    >
       <h3 className={styles.skills_title}>My Skill set</h3>
       <ul className={styles.skills_list}>
         <li>
