@@ -19,8 +19,8 @@ function Navbar() {
           </div>
           <ul>
             <li><a href="#">หน้าแรก</a></li>
-            <li><a href="#services">ทักษะ</a></li>
-            <li><a href="#certificates">เกียรติบัตร</a></li>
+            <li><a href="#skills">ทักษะ</a></li>
+            <li><a href="#certificate">เกียรติบัตร</a></li>
             <li><a href="#portfolio">โปรเจค</a></li>
             <li><a href="#contact">ติดต่อ</a></li>
           </ul>
