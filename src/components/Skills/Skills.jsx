@@ -1,61 +1,32 @@
-import React from 'react'
-import styles from './Skills.module.css'
-import { FaVuejs, FaReact, FaGitAlt, FaNode, FaPhp } from 'react-icons/fa6'
-import { SiExpress, SiMysql, SiTailwindcss } from "react-icons/si";
+import React from 'react';
+import styles from './Skills.module.css';
 import Tilt from 'react-parallax-tilt';
 
-function Skills({ bgColor }) {
+function Skills({ bgColor, title, icons }) {
   return (
     <div
-      id='skills'
+      id="skills"
       className={styles.skills_con}
       style={{ background: bgColor }}
     >
-      <h3 className={styles.skills_title}>My Skill set</h3>
+      <h3 className={styles.skills_title}>{title}</h3>
+
       <ul className={styles.skills_list}>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <FaReact />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <FaVuejs />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <SiTailwindcss />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <FaNode />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <SiExpress />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <FaPhp />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <SiMysql />
-          </Tilt>
-        </li>
-        <li>
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <FaGitAlt />
-          </Tilt>
-        </li>
+        {icons.map(({ icon: IconComponent, color, label }, index) => (
+          <li key={index} className={styles.skill_item}>
+            <Tilt scale={1.1} transitionSpeed={2000} tiltReverse={true}>
+              <div className={styles.icon_wrapper}>
+                <IconComponent
+                  style={{ color: color, width: '60px', height: '60px' }}
+                />
+                <p className={styles.icon_label}>{label}</p>
+              </div>
+            </Tilt>
+          </li>
+        ))}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

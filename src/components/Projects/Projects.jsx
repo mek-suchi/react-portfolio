@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './Testimonials.module.css'
+import styles from './Projects.module.css'
 
-function Testimonials() {
+function Projects() {
   return (
-    <div className={styles.testi_con}>
-      <h3 className={styles.testi_title}>โปรเจค</h3>
+    <div id='project' className={styles.testi_con}>
+      <h3 className={styles.testi_title}>Projects</h3>
       <div className={styles.testi_list}>
         <div className={styles.testi_items}>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet in optio architecto expedita amet possimus laudantium. Magni eaque soluta voluptas.</p>
@@ -29,4 +29,4 @@ function Testimonials() {
   )
 }
 
-export default Testimonials
+export default Projects

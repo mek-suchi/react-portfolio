@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './Portfolio.module.css'
+import styles from './Certificate.module.css'
 import Tilt from 'react-parallax-tilt';
 
-function Portfolio() {
+function Certificate() {
   return (
     <div id='certificate' className={styles.port_con}>
-      <h3 className={styles.port_title}>เกียรติบัตร</h3>
+      <h3 className={styles.port_title}>Certificates</h3>
       <div className={styles.port_list}>
         <div className={styles.port_items}>
             <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
@@ -48,4 +48,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default Certificate

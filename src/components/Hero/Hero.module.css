@@ -1,5 +1,5 @@
 .hero_wrapper {
-    height: 500px;
+    height: 550;
     overflow: hidden;
 
     & .container {
@@ -21,7 +21,7 @@
             & .text_2 {
                 font-size: 64px;
                 font-weight: bold;
-                background: linear-gradient(to right, #2F80ED, #56CCF2);
+                background: linear-gradient(to right, #4f46e5, #0ea5e9);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }

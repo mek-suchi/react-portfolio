@@ -18,11 +18,11 @@ function Navbar() {
             <a href="#">Portfolio</a>
           </div>
           <ul>
-            <li><a href="#">หน้าแรก</a></li>
-            <li><a href="#skills">ทักษะ</a></li>
-            <li><a href="#certificate">เกียรติบัตร</a></li>
-            <li><a href="#portfolio">โปรเจค</a></li>
-            <li><a href="#contact">ติดต่อ</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
 
           <div className={styles.button}>

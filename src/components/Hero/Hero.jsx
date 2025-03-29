@@ -26,7 +26,9 @@ function Hero() {
                 repeat={Infinity}
               />
             </p>
-            <p className={styles.text_4}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ผมรักการเรียนรู้และเปิดรับประสบการณ์ใหม่เสมอ ไม่ว่าท้าทายแค่ไหน ผมพร้อมสู้ มุ่งมั่น อดทน และรับผิดชอบเต็มที่ เชื่อว่าทุกโอกาสคือบทเรียน และทุกอุปสรรคคือแรงผลักดันให้พัฒนาตัวเอง ผมกระตือรือร้น มีมนุษยสัมพันธ์ดี ปรับตัวเก่ง และนำความรู้มาประยุกต์ใช้ให้เกิดประโยชน์สูงสุด"</p>
+            <p className={styles.text_4}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"I love learning and always welcome new experiences. No matter how challenging, I’m ready to face them with determination, perseverance, and full responsibility. I believe every opportunity is a lesson, and every obstacle is a driving force for self-development. I am enthusiastic, adaptable, have strong interpersonal skills, and can apply my knowledge to create the most meaningful impact."
+
+            </p>
             <ul className={styles.hero_social}>
               <li><a href="https://github.com/mek-suchi" target='_blank'><FaGithub /></a></li>
               <li><a href="#"><FaLinkedinIn /></a></li>
