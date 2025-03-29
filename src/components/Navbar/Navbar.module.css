@@ -1,10 +1,7 @@
 nav {
     background: rgba(9, 174, 250, 0.2);
-    /* เปลี่ยนเป็นโปร่งใส */
     backdrop-filter: blur(12px);
-    /* เอฟเฟกต์เบลอ */
     -webkit-backdrop-filter: blur(12px);
-    /* รองรับ Safari */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
     position: fixed;
