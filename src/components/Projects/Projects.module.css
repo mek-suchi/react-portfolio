@@ -1,3 +1,10 @@
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 60px auto;
@@ -76,21 +83,47 @@
   background-color: #111827;
 }
 
-/* Responsive font size for small screens */
+/* Responsive adjustments for medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 15px;
+    margin: 30px auto;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .image {
+    height: 180px;
+  }
+  .content {
+    padding: 16px;
+  }
+}
+
+/* Further adjustments for small screens (up to 480px) */
 @media (max-width: 480px) {
   .title {
     font-size: 26px;
+    margin-bottom: 30px;
   }
-
   .content h4 {
     font-size: 18px;
   }
-
   .content p {
     font-size: 14px;
   }
-
   .link {
     font-size: 13px;
+    padding: 8px 14px;
+  }
+  .grid {
+    gap: 15px;
+  }
+  .card {
+    border-radius: 12px;
+  }
+  .image {
+    height: 160px;
   }
 }
