@@ -8,8 +8,8 @@
 .port_con {
   max-width: 1170px;
   margin: 60px auto;
-  overflow: hidden;
   padding: 20px;
+  overflow: hidden;
 }
 
 .port_title {
@@ -24,6 +24,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   justify-items: center;
+  padding-bottom: 40px;
 }
 
 .port_items {
@@ -74,7 +75,7 @@
   background-color: #111827;
 }
 
-/* Slide animation for pagination content */
+/* Slide animation for pagination transition */
 .slide-enter {
   opacity: 0;
   transform: translateX(100%);
@@ -94,13 +95,13 @@
   transition: opacity 500ms ease-out, transform 500ms ease-out;
 }
 
-/* Pagination Styles: จัดวางชิดขวาด้านล่าง */
+/* Pagination Styles */
 .pagination {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .pageItem {
@@ -139,15 +140,23 @@
     margin: 30px 0;
     padding: 10px;
   }
+
   .port_list {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 10px;
   }
+
   .port_items {
     max-width: 100%;
   }
+
   .port_title {
     font-size: 28px;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: 30px;
   }
 }
