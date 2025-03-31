@@ -1,91 +1,146 @@
 .hero_wrapper {
-    height: 550;
     overflow: hidden;
-
-    & .container {
-        max-width: 1170px;
-        margin: 0 auto;
+  
+    .container {
+      padding: 0 20px 10px 20px;
+      text-align: left;
+      color: #333;
+      border-radius: 16px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1200px;
     }
-
-    & .hero_con {
+  
+    .hero_con {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 115px;
+  
+      .hero_info {
+        text-align: left;
+  
+        .text_1 {
+          font-size: 32px;
+        }
+  
+        .text_2 {
+          font-size: 64px;
+          font-weight: bold;
+          background: linear-gradient(to right, #4f46e5, #0ea5e9);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+  
+        .text_3 {
+          font-size: 32px;
+        }
+  
+        .text_4 {
+          font-size: 16px;
+          margin-top: 25px;
+        }
+      }
+  
+      .hero_img {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-image: url('../../assets/images/profile/profile.jpg');
+        box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
+                    rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+        background-size: cover;
+        background-position: top;
+      }
+  
+      .hero_social {
+        margin-top: 25px;
         display: flex;
-        justify-content: space-between;
-        margin-top: 115px;
-
-        & .hero_info {
-
-            & .text_1 {
-                font-size: 32px;
-            }
-
-            & .text_2 {
-                font-size: 64px;
-                font-weight: bold;
-                background: linear-gradient(to right, #4f46e5, #0ea5e9);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            & .text_3 {
-                font-size: 32px;
-
-
-            }
-
-            & .text_4 {
-                font-size: 16px;
-                margin-top: 25px;
-            }
-
+        list-style: none;
+  
+        li {
+          margin-right: 10px;
+  
+          svg {
+            width: 32px;
+            height: 32px;
+            color: #333;
+          }
         }
-
-        & .hero_img {
-            width: 300px;
-            height: 300px;
-            border-radius: 100%;
-            background-image: url('../../assets/images/profile/profile.jpg');
-            box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
-            background-size: cover;
-            background-position: top;
-            margin-right: 120px;
-        }
-
-        & .hero_social {
-            margin-top: 25px;
-            display: flex;
-            list-style: none;
-
-            & li {
-                margin-right: 10px;
-
-                & svg {
-                    width: 32px;
-                    height: 32px;
-                    color: #333;
-                }
-            }
-        }
-
-        & .typing-effect {
-            margin-left: 20px;
-        }
-
+      }
+  
+      .typing-effect {
+        margin-left: 20px;
+      }
     }
-}
-
-@media screen and (max-width: 480px) {
-    .hero_wrapper {
-        height: auto;
-
-        & .hero_con {
-            margin: 50px 0;
-            flex-direction: column;
-            padding: 20px;
-
-            & .hero_info,
-            & .hero_img {
-                width: 100%;
-            }
-        }
+  }
+  
+  /* Small Devices (sm): up to 576px */
+  @media screen and (max-width: 576px) {
+    .container {
+      padding: 0 !important;
     }
-}
+  
+    .hero_con {
+      padding: 0 !important;
+      margin-top: 70px !important;
+      flex-direction: column;
+    }
+  
+    .hero_con .hero_info,
+    .hero_con .hero_img {
+      width: 100%;
+    }
+  
+    .hero_con .hero_img {
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+    }
+  }
+  
+  /* Medium Devices (md): 577px to 991px */
+  @media screen and (min-width: 577px) and (max-width: 991px) {
+    .hero_con {
+      flex-direction: row;
+      margin-top: 80px;
+    }
+  
+    .hero_con .hero_img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  
+  /* Extra Large Devices (xl): 1200px and above */
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1400px;
+      padding: 50px 40px 10px 40px;
+    }
+  
+    .hero_con {
+      margin-top: 120px;
+    }
+  
+    .hero_con .hero_info .text_1 {
+      font-size: 34px;
+    }
+  
+    .hero_con .hero_info .text_2 {
+      font-size: 70px;
+    }
+  
+    .hero_con .hero_info .text_3 {
+      font-size: 34px;
+    }
+  
+    .hero_con .hero_info .text_4 {
+      font-size: 18px;
+    }
+  
+    .hero_con .hero_img {
+      width: 320px;
+      height: 320px;
+    }
+  }
+  
