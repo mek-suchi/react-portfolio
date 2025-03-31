@@ -35,8 +35,10 @@ function Navbar() {
         {isToggled ? (
           <>
             <ul className={styles.mobile_menu}>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#certificate">Certificates</a></li>
+              <li><a href="#project">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
             <div className={styles.mobile_button}>

@@ -1,140 +1,162 @@
+/* Global Styles for All Links: Remove underlines */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Base Navigation Styles */
 nav {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-
-    & a {
-        color: #000000;
-    }
-
-    & .bars {
-        position: absolute;
-        top: 54px;
-        right: 25px;
-        color: #fff;
-    }
-
-    .container {
-        max-width: 1170px;
-        margin: 0 auto;
-    }
-
-    .nav_con {
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        & .logo {
-            & a {
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
-
-        & ul {
-            display: flex;
-            list-style: none;
-
-            & li {
-                margin: 0 35px;
-
-                & a {
-                    text-decoration: none;
-                }
-            }
-        }
-
-        & .button {
-            width: 100px;
-            height: 35px;
-            background-color: #fff;
-            border: 1px solid #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-            transition: 0.3s;
-            cursor: pointer;
-
-            &:hover {
-                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
-            }
-
-            & a {
-                text-decoration: none;
-                color: #333;
-            }
-        }
-
-    }
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
+              rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-@media screen and (max-width: 480px) {
-    .nav_con {
-        flex-direction: column;
-        height: auto !important;
-        margin: 50px 0;
-        align-items: start !important;
-        margin-left: 30px;
-
-        & ul {
-            display: none !important;
-        }
-
-        & .button {
-            display: none !important;
-        }
-    }
-
-    .mobile_menu {
-        list-style: none;
-
-        & li {
-            margin: 35px;
-
-            & a {
-                text-decoration: none;
-            }
-        }
-    }
-
-    /* Mobile Menu */
-    & .mobile_button {
-        width: 100px;
-        height: 35px;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        transition: 0.3s;
-        cursor: pointer;
-        margin-left: 35px;
-        margin-bottom: 20px;
-
-        &:hover {
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
-        }
-
-        & a {
-            text-decoration: none;
-            color: #333;
-        }
-    }
+/* Navigation link color override */
+nav a {
+  color: #000;
 }
 
-@media screen and (min-width: 481px) {
+/* Mobile Menu Icon (.bars) Base Style */
+nav .bars {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #333;
+}
 
-    .mobile_menu,
-    .bars,
-    .mobile_button {
-        display: none;
-    }
+/* Container Base Style */
+nav .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Navigation Content Container Base Style */
+nav .nav_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Desktop Styles: For screens XL and above (≥1200px) */
+@media screen and (min-width: 1200px) {
+  /* Adjust container width for extra large screens */
+  nav .container {
+    max-width: 1400px;
+  }
+  
+  /* Desktop Navigation Layout */
+  nav .nav_con {
+    flex-direction: row;
+    height: 60px;           /* Fixed navbar height */
+    padding: 0 30px;        /* Horizontal padding */
+  }
+  
+  /* Navigation List: Display as horizontal menu */
+  nav .nav_con ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Spacing between nav list items */
+  nav .nav_con ul li {
+    margin: 0 35px;
+  }
+  
+  /* Button Style in Desktop View */
+  nav .nav_con .button {
+    display: flex;
+    width: 110px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #333;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  nav .nav_con .button a {
+    color: #333;
+  }
+  
+  /* Hide mobile-specific elements in desktop view */
+  .mobile_menu,
+  .mobile_button,
+  nav .bars {
+    display: none;
+  }
+}
+
+/* Mobile Styles: For screens below XL (<1200px)
+   (This covers xs, sm, md, and lg devices so that the mobile layout is shown) */
+@media screen and (max-width: 1199.98px) {
+  /* Mobile Navigation Layout */
+  nav .nav_con {
+    flex-direction: column;   /* Stack elements vertically */
+    height: auto;             /* Auto height */
+    margin: 20px 0;
+    align-items: flex-start;  /* Left align items */
+    padding-left: 30px;       /* Left padding */
+  }
+  
+  /* Hide horizontal menu list in mobile view */
+  nav .nav_con ul {
+    display: none;
+  }
+  
+  /* Hide desktop button in mobile view */
+  nav .nav_con .button {
+    display: none;
+  }
+  
+  /* Mobile Menu List Styling */
+  .mobile_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile_menu li {
+    margin: 35px;
+  }
+  
+  .mobile_menu li a {
+    color: #000;
+  }
+  
+  /* Mobile Button Styling */
+  .mobile_button {
+    display: flex;
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .mobile_button a {
+    color: #333;
+  }
+  
+  /* Show mobile menu icon in mobile view */
+  nav .bars {
+    display: block;
+    top: 25px;
+    right: 25px;
+  }
 }
