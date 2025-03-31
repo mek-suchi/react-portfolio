@@ -17,6 +17,7 @@ function Navbar() {
           <div className={styles.logo}>
             <a href="#">Portfolio</a>
           </div>
+          
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#skills">Skills</a></li>

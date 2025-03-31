@@ -1,10 +1,8 @@
-/* Global Styles for All Links: Remove underlines */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Base Navigation Styles */
 nav {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
@@ -18,47 +16,85 @@ nav {
   z-index: 999;
 }
 
-/* Navigation link color override */
 nav a {
   color: #000;
 }
 
-/* Mobile Menu Icon (.bars) Base Style */
 nav .bars {
   position: absolute;
   top: 25px;
   right: 25px;
   color: #333;
+  display: block;
 }
 
-/* Container Base Style */
 nav .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-/* Navigation Content Container Base Style */
 nav .nav_con {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin: 20px 0;
+  padding-left: 30px;
 }
 
-/* Desktop Styles: For screens XL and above (≥1200px) */
-@media screen and (min-width: 1200px) {
-  /* Adjust container width for extra large screens */
+nav .nav_con ul {
+  display: none;
+}
+
+nav .nav_con .button {
+  display: none;
+}
+
+.mobile_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile_menu li {
+  margin: 35px;
+}
+
+.mobile_menu li a {
+  color: #000;
+}
+
+.mobile_button {
+  display: flex;
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.mobile_button a {
+  color: #333;
+}
+
+@media screen and (min-width: 980px) {
   nav .container {
     max-width: 1400px;
   }
   
-  /* Desktop Navigation Layout */
   nav .nav_con {
     flex-direction: row;
-    height: 60px;           /* Fixed navbar height */
-    padding: 0 30px;        /* Horizontal padding */
+    height: 60px;
+    padding: 0 30px;
+    align-items: center;
+    margin: 0;
   }
   
-  /* Navigation List: Display as horizontal menu */
   nav .nav_con ul {
     display: flex;
     list-style: none;
@@ -66,12 +102,10 @@ nav .nav_con {
     padding: 0;
   }
   
-  /* Spacing between nav list items */
   nav .nav_con ul li {
     margin: 0 35px;
   }
   
-  /* Button Style in Desktop View */
   nav .nav_con .button {
     display: flex;
     width: 110px;
@@ -89,74 +123,9 @@ nav .nav_con {
     color: #333;
   }
   
-  /* Hide mobile-specific elements in desktop view */
   .mobile_menu,
   .mobile_button,
   nav .bars {
     display: none;
-  }
-}
-
-/* Mobile Styles: For screens below XL (<1200px)
-   (This covers xs, sm, md, and lg devices so that the mobile layout is shown) */
-@media screen and (max-width: 1199.98px) {
-  /* Mobile Navigation Layout */
-  nav .nav_con {
-    flex-direction: column;   /* Stack elements vertically */
-    height: auto;             /* Auto height */
-    margin: 20px 0;
-    align-items: flex-start;  /* Left align items */
-    padding-left: 30px;       /* Left padding */
-  }
-  
-  /* Hide horizontal menu list in mobile view */
-  nav .nav_con ul {
-    display: none;
-  }
-  
-  /* Hide desktop button in mobile view */
-  nav .nav_con .button {
-    display: none;
-  }
-  
-  /* Mobile Menu List Styling */
-  .mobile_menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .mobile_menu li {
-    margin: 35px;
-  }
-  
-  .mobile_menu li a {
-    color: #000;
-  }
-  
-  /* Mobile Button Styling */
-  .mobile_button {
-    display: flex;
-    width: 100px;
-    height: 35px;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    transition: 0.3s;
-    cursor: pointer;
-    margin-left: 35px;
-    margin-bottom: 20px;
-  }
-  
-  .mobile_button a {
-    color: #333;
-  }
-  
-  /* Show mobile menu icon in mobile view */
-  nav .bars {
-    display: block;
-    top: 25px;
-    right: 25px;
   }
 }
