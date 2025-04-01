@@ -125,11 +125,11 @@
 }
 
 .pageLink:hover {
-  background-color: #ff0505;
+  background-color: #0f61db;
 }
 
 .active .pageLink {
-  background-color: #ff0505;
+  background-color: #0f61db;
 }
 
 /* Responsive adjustments */
