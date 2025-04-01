@@ -5,10 +5,12 @@
   box-sizing: border-box;
 }
 
+/* Base styles */
 .wrapper {
+  color: #333;
+  margin: 40px auto;
+  width: 90%;
   max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
 }
 
 .title {
@@ -18,12 +20,14 @@
   margin-bottom: 40px;
 }
 
+/* Base grid: สำหรับ md ขึ้นไป (2 คอลัมน์) */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
+/* Card styles */
 .card {
   background: #fff;
   border-radius: 16px;
@@ -40,7 +44,7 @@
 
 .image {
   width: 100%;
-  height: 220px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -83,47 +87,55 @@
   background-color: #111827;
 }
 
-/* Responsive adjustments for medium screens (up to 768px) */
-@media (max-width: 768px) {
-  .wrapper {
-    padding: 0 15px;
-    margin: 30px auto;
-  }
+/* Responsive adjustments for small screens (sm): up to 767px */
+@media (max-width: 767px) {
+
+  /* แสดง 1 คอลัมน์ */
   .grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .image {
-    height: 180px;
+    width: 100%;
+    height: auto;
   }
+
   .content {
     padding: 16px;
   }
 }
 
-/* Further adjustments for small screens (up to 480px) */
+/* Further adjustments for very small screens (up to 480px) */
 @media (max-width: 480px) {
   .title {
     font-size: 26px;
     margin-bottom: 30px;
   }
+
   .content h4 {
     font-size: 18px;
   }
+
   .content p {
     font-size: 14px;
   }
+
   .link {
     font-size: 13px;
     padding: 8px 14px;
   }
+
   .grid {
     gap: 15px;
   }
+
   .card {
     border-radius: 12px;
   }
+
   .image {
-    height: 160px;
+    width: 100%;
+    height: auto;
   }
 }

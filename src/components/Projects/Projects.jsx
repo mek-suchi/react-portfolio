@@ -10,8 +10,8 @@ const projectData = [
     description:
       'A system for managing agricultural data of a university farm. Built with React, Node.js, and MySQL.',
     images: [
-      'https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      'https://scontent.fkkc4-2.fna.fbcdn.net/v/t1.15752-9/485209442_1206801070818870_133400766013769270_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8FrRuEq1UM4Q7kNvgHXd8rI&_nc_oc=AdljqUj3bt4STKGB8QYub2sRU7nYvw1h82EyqiqDCzz9StPhRQVg7xpMSdn5LaJqdUAd9dDxifPOEgPXPAVw5p6C&_nc_zt=23&_nc_ht=scontent.fkkc4-2.fna&oh=03_Q7cD1wHE6PmVvLO7-KAWArxgjMAcZKpaIHj-3WQaEWljoXCJLQ&oe=6812E8B3',
+      'https://scontent.fkkc4-2.fna.fbcdn.net/v/t1.15752-9/485209442_1206801070818870_133400766013769270_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8FrRuEq1UM4Q7kNvgHXd8rI&_nc_oc=AdljqUj3bt4STKGB8QYub2sRU7nYvw1h82EyqiqDCzz9StPhRQVg7xpMSdn5LaJqdUAd9dDxifPOEgPXPAVw5p6C&_nc_zt=23&_nc_ht=scontent.fkkc4-2.fna&oh=03_Q7cD1wHE6PmVvLO7-KAWArxgjMAcZKpaIHj-3WQaEWljoXCJLQ&oe=6812E8B3'
     ],
     github: 'https://github.com/yourusername/farm-info-system'
   },
@@ -55,7 +55,7 @@ function Projects() {
       <div className={styles.grid}>
         {projectData.map((proj, pIndex) => (
           <div key={pIndex} className={styles.card}>
-            <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} interval={3000}>
+            <Carousel  infiniteLoop showThumbs={false} showStatus={false} interval={3000}>
               {proj.images.map((img, i) => (
                 <div key={i} onClick={() => openLightbox(proj.images, i)}>
                   <img
