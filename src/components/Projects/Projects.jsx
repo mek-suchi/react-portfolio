@@ -20,9 +20,8 @@ const projectData = [
     description:
       'An academic dashboard for students to view schedules, grades, and announcements.',
     images: [
-      'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://plus.unsplash.com/premium_photo-1661293879952-c5c093282801?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      'https://scontent.fkkc4-2.fna.fbcdn.net/v/t1.15752-9/485209442_1206801070818870_133400766013769270_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8FrRuEq1UM4Q7kNvgHXd8rI&_nc_oc=AdljqUj3bt4STKGB8QYub2sRU7nYvw1h82EyqiqDCzz9StPhRQVg7xpMSdn5LaJqdUAd9dDxifPOEgPXPAVw5p6C&_nc_zt=23&_nc_ht=scontent.fkkc4-2.fna&oh=03_Q7cD1wHE6PmVvLO7-KAWArxgjMAcZKpaIHj-3WQaEWljoXCJLQ&oe=6812E8B3', 'https://scontent.fkkc4-2.fna.fbcdn.net/v/t1.15752-9/485209442_1206801070818870_133400766013769270_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8FrRuEq1UM4Q7kNvgHXd8rI&_nc_oc=AdljqUj3bt4STKGB8QYub2sRU7nYvw1h82EyqiqDCzz9StPhRQVg7xpMSdn5LaJqdUAd9dDxifPOEgPXPAVw5p6C&_nc_zt=23&_nc_ht=scontent.fkkc4-2.fna&oh=03_Q7cD1wHE6PmVvLO7-KAWArxgjMAcZKpaIHj-3WQaEWljoXCJLQ&oe=6812E8B3', 'https://scontent.fkkc4-2.fna.fbcdn.net/v/t1.15752-9/485209442_1206801070818870_133400766013769270_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8FrRuEq1UM4Q7kNvgHXd8rI&_nc_oc=AdljqUj3bt4STKGB8QYub2sRU7nYvw1h82EyqiqDCzz9StPhRQVg7xpMSdn5LaJqdUAd9dDxifPOEgPXPAVw5p6C&_nc_zt=23&_nc_ht=scontent.fkkc4-2.fna&oh=03_Q7cD1wHE6PmVvLO7-KAWArxgjMAcZKpaIHj-3WQaEWljoXCJLQ&oe=6812E8B3',
+      'https://scontent.fkkc4-2.fna.fbcdn.net/v/t1.15752-9/485209442_1206801070818870_133400766013769270_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8FrRuEq1UM4Q7kNvgHXd8rI&_nc_oc=AdljqUj3bt4STKGB8QYub2sRU7nYvw1h82EyqiqDCzz9StPhRQVg7xpMSdn5LaJqdUAd9dDxifPOEgPXPAVw5p6C&_nc_zt=23&_nc_ht=scontent.fkkc4-2.fna&oh=03_Q7cD1wHE6PmVvLO7-KAWArxgjMAcZKpaIHj-3WQaEWljoXCJLQ&oe=6812E8B3',
     ],
     github: 'https://github.com/yourusername/student-dashboard'
   },
@@ -55,7 +54,7 @@ function Projects() {
       <div className={styles.grid}>
         {projectData.map((proj, pIndex) => (
           <div key={pIndex} className={styles.card}>
-            <Carousel  infiniteLoop showThumbs={false} showStatus={false} interval={3000}>
+            <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} interval={3000}>
               {proj.images.map((img, i) => (
                 <div key={i} onClick={() => openLightbox(proj.images, i)}>
                   <img

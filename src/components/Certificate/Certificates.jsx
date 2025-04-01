@@ -5,39 +5,115 @@ import Tilt from 'react-parallax-tilt';
 import ReactPaginate from 'react-paginate';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-// Dummy certificateData with manual image URLs
+// ตัวอย่างข้อมูล Certificate (จำนวนเยอะ ๆ เพื่อทดสอบ)
 const certificateData = [
   {
-    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgH4KGKa&_nc_oc=AdkqJ_X-XrIwU7q_r0N9rKRjkrFv_usTX0M-6aULTX96SywpPc7PAtFtKPgJs6vxESn6rncJenWsF0qyjCHX8_W7&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wGrchgWiUfNEPA0UF2XeCMRA5pMY_92yXFywCejwcrEvQ&oe=68121813',
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
+    title: 'Full-Stack Web Development',
+    issuedBy: 'FutureSkill',
+    instructor: 'ชื่อผู้สอนด',
+    completedDate: 'January 2025',
+    certificateLink: 'https://example.com'
+  }, {
+    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgGWrA5R&_nc_oc=Adlpp57F9sGW_QUgY2qVYe5iJiPNR6miYkjlOexf7DgXwuUcL7-wjHF0mJ1VIXKSYgXV8MA4ketv8ejO2oFbmIr0&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wH6q0d_XGrpNAM9FdbuNY_WB5bBmEmz4lB0paJL31lZJw&oe=68133153',
     title: 'Full-Stack Web Development',
     issuedBy: 'FutureSkill',
     instructor: 'ชื่อผู้สอนด',
     completedDate: 'January 2025',
     certificateLink: 'https://example.com'
   },
-  {
-    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgH4KGKa&_nc_oc=AdkqJ_X-XrIwU7q_r0N9rKRjkrFv_usTX0M-6aULTX96SywpPc7PAtFtKPgJs6vxESn6rncJenWsF0qyjCHX8_W7&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wGrchgWiUfNEPA0UF2XeCMRA5pMY_92yXFywCejwcrEvQ&oe=68121813',
-    title: 'Data Science Bootcamp',
-    issuedBy: 'FutureSkill',
-    instructor: 'ชื่อผู้สอนด',
-    completedDate: 'February 2025',
-    certificateLink: 'https://example.com'
-  },
-  {
-    src: 'https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/454145457_1019682393155057_974241358229359546_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Lt18Snk5Q-AQ7kNvgH4KGKa&_nc_oc=AdkqJ_X-XrIwU7q_r0N9rKRjkrFv_usTX0M-6aULTX96SywpPc7PAtFtKPgJs6vxESn6rncJenWsF0qyjCHX8_W7&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD1wGrchgWiUfNEPA0UF2XeCMRA5pMY_92yXFywCejwcrEvQ&oe=68121813',
-    title: 'UI/UX Design',
-    issuedBy: 'FutureSkill',
-    instructor: 'ชื่อผู้สอนด',
-    completedDate: 'March 2025',
-    certificateLink: 'https://example.com'
-  },
-  // เพิ่มข้อมูล certificate แบบ manual ได้ที่นี่
 ];
 
 function Certificate() {
+  // แสดง 6 ใบต่อหน้า
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(0);
 
+  // คำนวณ slice ข้อมูลตามหน้า
   const offset = currentPage * itemsPerPage;
   const currentItems = certificateData.slice(offset, offset + itemsPerPage);
   const pageCount = Math.ceil(certificateData.length / itemsPerPage);
@@ -49,6 +125,7 @@ function Certificate() {
   return (
     <div className={styles.port_con}>
       <h3 className={styles.port_title}>Certificates</h3>
+
       <TransitionGroup component={null}>
         <CSSTransition
           key={currentPage}
@@ -91,6 +168,7 @@ function Certificate() {
           </div>
         </CSSTransition>
       </TransitionGroup>
+
       {certificateData.length > itemsPerPage && (
         <ReactPaginate
           forcePage={currentPage}

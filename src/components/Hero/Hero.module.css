@@ -45,7 +45,8 @@
         width: 300px;
         height: 300px;
         border-radius: 100%;
-        background-image: url('../../assets/images/profile/profile.jpg');
+        /* background-image: url('../../assets/images/profile/profile.jpg'); */
+        background-image: url('https://scontent.fkkc4-1.fna.fbcdn.net/v/t39.30808-6/483645525_1139688371234283_1365080604485176082_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=zrgXnMaPcQIQ7kNvgGulVYm&_nc_oc=AdkG6yos_hGgyt_3mi3m4CP-vgwvgMQ9HyWLMRAeFco1hgcrVmgDhSOzNSnB6RgYrwZWUiYGesj9FlgTokITrAFA&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&_nc_gid=myoJ3oiLSfqL7eVnrNxkTg&oh=00_AYHKDcfhCw1WB2xBVNWc0kqE3Qh-fXuAO3d08UEnPKWc0w&oe=67F1A2B7');
         box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
                     rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
         background-size: cover;
