@@ -47,7 +47,7 @@ function Certificate() {
   };
 
   return (
-    <div id="certificate" className={styles.port_con}>
+    <div className={styles.port_con}>
       <h3 className={styles.port_title}>Certificates</h3>
       <TransitionGroup component={null}>
         <CSSTransition
