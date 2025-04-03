@@ -7,7 +7,7 @@
 
 .port_con {
   color: #333;
-  margin: 40px auto;
+  margin: 66px auto 0px auto;
   width: 90%;
   max-width: 1200px;
   position: relative; /* เพื่อให้ .pagination absolute อยู่ในคอนเทนเนอร์นี้ */
@@ -17,6 +17,7 @@
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 /* 
@@ -34,7 +35,7 @@
 }
 
 .port_items {
-  margin-top: 20px;
+  margin-top: 0px;
   width: 100%;
   max-width: 100%;
 }

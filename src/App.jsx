@@ -120,7 +120,7 @@ function App() {
         <Number />
       </section>
 
-      <section id="portfolio">
+      <section id="project">
         <Projects />
       </section>
 

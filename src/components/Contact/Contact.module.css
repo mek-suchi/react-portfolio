@@ -5,6 +5,7 @@
     height: 500px;
     color: #fff;
     overflow: hidden;
+    margin-top: 80px;
 
     & .contact_con {
         max-width: 1170px;
