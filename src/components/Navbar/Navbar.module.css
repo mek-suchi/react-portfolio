@@ -9,7 +9,7 @@ nav {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
-              rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -86,7 +86,7 @@ nav .nav_con .button {
   nav .container {
     max-width: 1400px;
   }
-  
+
   nav .nav_con {
     flex-direction: row;
     height: 60px;
@@ -94,18 +94,18 @@ nav .nav_con .button {
     align-items: center;
     margin: 0;
   }
-  
+
   nav .nav_con ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  
+
   nav .nav_con ul li {
     margin: 0 35px;
   }
-  
+
   nav .nav_con .button {
     display: flex;
     width: 150px;
@@ -118,11 +118,16 @@ nav .nav_con .button {
     transition: 0.3s;
     cursor: pointer;
   }
-  
+
+  nav .nav_con .button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+
   nav .nav_con .button a {
     color: #333;
   }
-  
+
   .mobile_menu,
   .mobile_button,
   nav .bars {
