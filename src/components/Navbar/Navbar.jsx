@@ -27,7 +27,7 @@ function Navbar() {
           </ul>
 
           <div className={styles.button}>
-            <a href="#">Hire Me</a>
+            <a href="#">Download CV</a>
           </div>
         </div>
 
