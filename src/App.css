@@ -1,4 +1,12 @@
-section, wrapper {
-    scroll-margin-top: 80px;
-  }
-  
+section,
+wrapper {
+  scroll-margin-top: 80px;
+}
+
+#skills {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 33px;
+  margin-bottom: 40px;
+}

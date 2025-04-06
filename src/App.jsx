@@ -101,6 +101,7 @@ function App() {
       <Hero />
 
       <section id="skills">
+        <h3 id="skills">Tech Stack</h3>
         {skillsData.map(skill => (
           <Skills
             key={skill.id}
