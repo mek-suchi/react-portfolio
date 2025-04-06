@@ -153,7 +153,12 @@
   .port_items {
     max-width: 100%;
   }
+
+  .port_con {
+    margin-top: 50px;
+  }
   .port_title {
     font-size: 28px;
+    margin-bottom: 27px;
   }
 }
