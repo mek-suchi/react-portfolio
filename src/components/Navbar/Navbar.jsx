@@ -17,7 +17,7 @@ function Navbar() {
           <div className={styles.logo}>
             <a href="#">Portfolio</a>
           </div>
-          
+
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -43,7 +43,7 @@ function Navbar() {
               <li><a href="#contact">Contact</a></li>
             </ul>
             <div className={styles.mobile_button}>
-              <a href="#">Hire Me</a>
+              <a href="#">Download CV</a>
             </div>
           </>
         ) : null}

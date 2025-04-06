@@ -9,7 +9,7 @@ nav {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+              rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -66,9 +66,10 @@ nav .nav_con .button {
 
 .mobile_button {
   display: flex;
-  width: 100px;
+  width: 150px;
   height: 35px;
   background-color: #fff;
+  border: 1px solid #333;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
@@ -76,6 +77,11 @@ nav .nav_con .button {
   cursor: pointer;
   margin-left: 35px;
   margin-bottom: 20px;
+}
+
+nav .nav_con .button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .mobile_button a {
