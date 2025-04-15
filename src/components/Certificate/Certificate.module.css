@@ -1,4 +1,4 @@
-/* Global reset */
+/* Certificate.module.css */
 *,
 *::before,
 *::after {
@@ -7,10 +7,10 @@
 
 .port_con {
   color: #333;
-  margin: 66px auto 0px auto;
+  margin: 66px auto 0;
   width: 90%;
   max-width: 1200px;
-  position: relative; /* เพื่อให้ .pagination absolute อยู่ในคอนเทนเนอร์นี้ */
+  position: relative;
 }
 
 .port_title {
@@ -20,22 +20,17 @@
   margin-bottom: 40px;
 }
 
-/* 
-  Grid 2 Rows × 3 Columns (6 slots) 
-  ถ้าข้อมูลเกิน 6 ชิ้น -> ขึ้นหน้าใหม่ผ่าน Pagination
-*/
 .port_list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 40px;
   justify-items: center;
-  padding-bottom: 110px;
   min-height: 450px;
+  margin-bottom: 20px;
 }
 
 .port_items {
-  margin-top: 0px;
   width: 100%;
   max-width: 100%;
 }
@@ -45,8 +40,8 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
-              rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.15) 0 6px 12px -2px,
+              rgba(0, 0, 0, 0.2) 0 3px 7px -3px;
 }
 
 .cert_info {
@@ -82,7 +77,6 @@
   background-color: #111827;
 }
 
-/* Fade (opacity) animation: 0 -> 1 in 0.3s */
 .slideEnter {
   opacity: 0;
 }
@@ -98,67 +92,61 @@
   transition: opacity 0.3s ease;
 }
 
-/* Pagination: absolute มุมขวาล่างใน .port_con */
-.pagination {
+.paginationWrapper {
   display: flex;
-  list-style: none;
-  position: absolute;
-  bottom: 40px; /* ชิดขอบล่าง */
-  right: 20px;  /* ชิดขอบขวา */
-  z-index: 1;
-  margin: 0;
-  padding: 0;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-.pageItem {
-  margin: 0 5px;
-}
-
-.pageLink {
-  display: block;
+.pageButton {
   padding: 8px 12px;
   background-color: #1f2937;
   color: #fff;
-  text-decoration: none;
+  border: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
 }
 
-.pageLink:hover {
+.pageButton:hover {
   background-color: #0f61db;
 }
 
-.active .pageLink {
+.pageButton:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+.activePage {
   background-color: #0f61db;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  /* Tablet: 2 columns แทน 3 columns */
   .port_list {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto); /* ถ้าอยากให้ยังรองรับ 6 slots: 2 columns × 3 rows = 6 items */
+    grid-template-rows: repeat(3, auto);
     min-height: 600px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Mobile: 1 column */
   .port_list {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto); /* 6 slots: 6 rows × 1 column */
-    min-height: 900px;
+    grid-template-rows: auto;
+    min-height: auto;
   }
-  .port_items {
-    max-width: 100%;
-  }
-
   .port_con {
     margin-top: 50px;
   }
   .port_title {
     font-size: 28px;
     margin-bottom: 27px;
+  }
+  .pageButton {
+    padding: 6px 10px;
+    font-size: 0.9rem;
   }
 }
