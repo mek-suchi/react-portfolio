@@ -201,7 +201,6 @@ const certificateData = [
     completedDate: "January 2025",
     certificateLink: "https://example.com",
   },
-  // ... (รายการ Certificate อื่น ๆ)
 ];
 
 function Certificate() {
