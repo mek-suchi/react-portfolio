@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import styles from './Navbar.module.css'
+import React, { useState } from "react";
+import styles from "./Navbar.module.css";
 import { FaBars } from "react-icons/fa6";
 
 function Navbar() {
-
   const [isToggled, setToggle] = useState(false);
 
   function handleToggle() {
-    setToggle(!isToggled)
+    setToggle(!isToggled);
   }
 
   return (
@@ -19,15 +18,27 @@ function Navbar() {
           </div>
 
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certificate">Certificates</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#certificate">Certificates</a>
+            </li>
+            <li>
+              <a href="#project">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
 
           <div className={styles.button}>
-            <a href="#">Download CV</a>
+            <a href="/src/assets/Resume-Suchichiart.pdf" download>
+              Download CV
+            </a>
           </div>
         </div>
 
@@ -36,21 +47,30 @@ function Navbar() {
         {isToggled ? (
           <>
             <ul className={styles.mobile_menu}>
-              <li><a href="#">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#certificate">Certificates</a></li>
-              <li><a href="#project">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#certificate">Certificates</a>
+              </li>
+              <li>
+                <a href="#project">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
             <div className={styles.mobile_button}>
               <a href="#">Download CV</a>
             </div>
           </>
         ) : null}
-
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

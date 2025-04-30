@@ -11,48 +11,48 @@ function Number() {
           <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
             {({ isVisible }) => (
               <div>
-                {isVisible ? <CountUp start={0} end={100} duration={5} /> : null}+
+                {isVisible ? <CountUp start={0} end={4} duration={5} /> : null}+
               </div>
             )}
           </VisibilitySensor>
         </h3>
-        <p>Project Delivered</p>
+        <p>Internship Experience</p>
       </div>
       <div className={styles.number_items}>
         <h3>
           <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
             {({ isVisible }) => (
               <div>
-                {isVisible ? <CountUp start={0} end={50} duration={5} /> : null}+
+                {isVisible ? <CountUp start={0} end={4} duration={5} /> : null}+
               </div>
             )}
           </VisibilitySensor>
         </h3>
-        <p>Companies Helped</p>
+        <p>Academic & Practice Projects</p>
       </div>
       <div className={styles.number_items}>
         <h3>
           <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
             {({ isVisible }) => (
               <div>
-                {isVisible ? <CountUp start={0} end={10} duration={5} /> : null}+
+                {isVisible ? <CountUp start={0} end={21} duration={5} /> : null}+
               </div>
             )}
           </VisibilitySensor>
         </h3>
-        <p>Years of Experience</p>
+        <p>Completed Full-Stack Courses</p>
       </div>
       <div className={styles.number_items}>
         <h3>
           <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
             {({ isVisible }) => (
               <div>
-                {isVisible ? <CountUp start={0} end={200} duration={5} /> : null}+
+                {isVisible ? <CountUp start={0} end={100} duration={5} /> : null}%+
               </div>
             )}
           </VisibilitySensor>
         </h3>
-        <p>Happy Clients</p>
+        <p>Motivation to Learn & Improve</p>
       </div>
     </div>
   );

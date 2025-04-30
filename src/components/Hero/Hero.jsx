@@ -19,14 +19,14 @@ function Hero() {
                   // Same substring at the start will only be typed out once, initially
                   'Full-Stack Developer',
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  'Web Developer',
+                  'Frontend Developer',
                   1000,
                 ]}
                 speed={50}
                 repeat={Infinity}
               />
             </p>
-            <p className={styles.text_4}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"I love learning and always welcome new experiences. No matter how challenging, I’m ready to face them with determination, perseverance, and full responsibility. I believe every opportunity is a lesson, and every obstacle is a driving force for self-development. I am enthusiastic, adaptable, have strong interpersonal skills, and can apply my knowledge to create the most meaningful impact."
+            <p className={styles.text_4}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"I’m a motivated junior web developer with strong hands-on full-stack development experience. I’m a quick learner, highly adaptable, and enjoy solving real-world problems using modern technologies such as React, Vue, Node.js, and MySQL. I work well in team environments, possess a growth mindset, and continuously seek new opportunities to enhance my technical and professional skills."
 
             </p>
             <ul className={styles.hero_social}>
