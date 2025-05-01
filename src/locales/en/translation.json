@@ -1,0 +1,82 @@
+{
+    "navbar": {
+        "portfolio": "Portfolio",
+        "home": "Home",
+        "skills": "Skills",
+        "certificates": "Certificates",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, it's me",
+        "name": "Suchichart Chuttale",
+        "im_a": "I'm a",
+        "roles": {
+            "fullstack": "Full-Stack Developer",
+            "frontend": "Web Developer"
+        },
+        "description": "Hi, I'm a junior web developer who is passionate, eager to learn, and always open to new challenges. I have hands-on experience developing both front-end and back-end using modern technologies such as React, Vue, Node.js, and MySQL. I learn quickly, adapt easily, and enjoy solving real-world problems. I believe in the Growth Mindset and value improving both technical skills and teamwork. I'm currently looking for an opportunity to start my career in web development, gain real experience, and grow steadily in this field.",
+        "download_cv": "Download CV"
+    },
+    "app": {
+        "tech_stack": "Tech Stack"
+    },
+    "skills": {
+        "programming": "Programming Languages",
+        "programming_desc": "Languages I use to build fast, scalable applications.",
+        "frameworks": "Frameworks & Libraries",
+        "frameworks_desc": "I build modern UI and backend services using these tools.",
+        "tools": "Tools",
+        "tools_desc": "My daily toolkit for writing, testing, and shipping code."
+    },
+    "cert": {
+        "heading": "Certificates",
+        "issued_by": "Issued by",
+        "instructor": "Instructor",
+        "completed": "Completed",
+        "view": "View Certificate",
+        "prev": "Prev",
+        "next": "Next"
+    },
+    "number": {
+        "intern": "Internship Experience",
+        "projects": "Academic & Practice Projects",
+        "courses": "Completed FutureSkill Courses",
+        "motivation": "Motivation to Learn & Improve"
+    },
+    "projects": {
+        "heading": "Projects",
+        "view": "View on GitHub",
+        "work": {
+            "title": "Work Progress Tracking System",
+            "desc": "Refactored and expanded the frontend using Vue.js and Nuxt.js; improved backend logic with Node.js and Express; collaborated with a mentor to align data display with user requirements; enhanced task-tracking experience with a more intuitive UI."
+        },
+        "farm": {
+            "title": "SUT Farm Information System",
+            "desc": "Improved UI, search features, and data management using React.js, Node.js, and MySQL; conducted testing to ensure data accuracy and system usability; fixed inconsistencies and enhanced daily operation workflows."
+        },
+        "qr": {
+            "title": "QR-Code Food Ordering System",
+            "desc": "Built a fully responsive ordering interface with HTML, CSS, JavaScript, and Tailwind CSS; generated and scanned table-specific QR codes via PHP, storing orders in MySQL; implemented a dashboard for real-time order status tracking and kitchen management; optimized database queries and secured customer data for reliable, high-volume use."
+        }
+    },
+    "contact": {
+        "heading": "Get in touch",
+        "desc": "We’d love to hear from you! Whether you have a question, feedback, or just want to say hello — feel free to reach out.",
+        "address": "181/18, Soi Chenmari, Nai Mueang Subdistrict, Mueang District, Nakhon Ratchasima 30000",
+        "form": {
+            "first": "First Name",
+            "first_ph": "Enter your first name",
+            "last": "Last Name",
+            "last_ph": "Enter your last name",
+            "email": "Email Address",
+            "email_ph": "Enter your professional email address",
+            "message": "Your Message",
+            "message_ph": "Please write your message or inquiry here",
+            "send": "Send Message"
+        }
+    },
+    "footer": {
+        "copyright": "Copyright © {{year}}. All Rights Reserved."
+    }
+}
