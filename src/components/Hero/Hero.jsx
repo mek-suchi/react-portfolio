@@ -22,7 +22,7 @@ function Hero() {
                 sequence={[
                   t("hero.roles.fullstack"),
                   1000,
-                  t("hero.roles.frontend"),
+                  t("hero.roles.web"),
                   1000,
                 ]}
                 speed={50}

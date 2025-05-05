@@ -6,23 +6,38 @@ import { createGlobalStyle } from "styled-components";
 import AnimatedCursor from "react-animated-cursor";
 
 // Components
-import Navbar      from "./components/Navbar/Navbar";
-import Hero        from "./components/Hero/Hero";
-import Skills      from "./components/Skills/Skills";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Skills from "./components/Skills/Skills";
 import Certificate from "./components/Certificate/Certificates";
-import Number      from "./components/Number/Number";
-import Projects    from "./components/Projects/Projects";
-import Contact     from "./components/Contact/Contact";
-import Footer      from "./components/Footer/Footer";
+import Number from "./components/Number/Number";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 // Icons
 import {
-  FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaNodeJs, FaReact, FaVuejs
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaPhp,
+  FaNodeJs,
+  FaReact,
+  FaVuejs,
 } from "react-icons/fa";
 import {
-  SiTypescript, SiMysql, SiMongodb, SiTailwindcss, SiBootstrap,
-  SiNextdotjs, SiNuxtdotjs, SiVisualstudiocode, SiPostman,
-  SiFigma, SiGithub
+  SiTypescript,
+  SiMysql,
+  SiDocker,
+  SiTailwindcss,
+  SiBootstrap,
+  SiNextdotjs,
+  SiNuxtdotjs,
+  SiVisualstudiocode,
+  SiPostman,
+  SiFigma,
+  SiGithub,
+  SiFilezilla,
 } from "react-icons/si";
 
 // ---------------------- STYLES ----------------------
@@ -53,8 +68,8 @@ function App() {
           { icon: SiTypescript, color: "#3178c6", label: "TypeScript" },
           { icon: FaPhp, color: "#777bb4", label: "PHP" },
           { icon: FaNodeJs, color: "#68a063", label: "Node.js" },
-          { icon: SiMysql, color: "#00758f", label: "MySQL" }
-        ]
+          { icon: SiMysql, color: "#00758f", label: "MySQL" },
+        ],
       },
       {
         id: 2,
@@ -63,13 +78,13 @@ function App() {
         bgColor:
           "linear-gradient(135deg, rgba(225,245,254,0.8), rgba(129,212,250,0.8))",
         icons: [
-          { icon: SiBootstrap,  color: "#7952b3", label: "Bootstrap" },
+          { icon: SiBootstrap, color: "#7952b3", label: "Bootstrap" },
           { icon: SiTailwindcss, color: "#38bdf8", label: "Tailwind" },
-          { icon: FaReact,       color: "#61dafb", label: "React" },
-          { icon: SiNextdotjs,   color: "#000000", label: "Next.js" },
-          { icon: FaVuejs,       color: "#42b883", label: "Vue.js" },
-          { icon: SiNuxtdotjs,   color: "#00c58e", label: "Nuxt.js" }
-        ]
+          { icon: FaReact, color: "#61dafb", label: "React" },
+          { icon: SiNextdotjs, color: "#000000", label: "Next.js" },
+          { icon: FaVuejs, color: "#42b883", label: "Vue.js" },
+          { icon: SiNuxtdotjs, color: "#00c58e", label: "Nuxt.js" },
+        ],
       },
       {
         id: 3,
@@ -79,12 +94,13 @@ function App() {
           "linear-gradient(135deg, rgba(237,231,246,0.8), rgba(179,157,219,0.8))",
         icons: [
           { icon: SiVisualstudiocode, color: "#007acc", label: "VS Code" },
-          { icon: SiPostman,          color: "#ff6c37", label: "Postman" },
-          { icon: SiGithub,           color: "#181717", label: "GitHub" },
-          { icon: SiFigma,            color: "#f24e1e", label: "Figma" },
-          { icon: SiMongodb,          color: "#47A248", label: "MongoDB" }
-        ]
-      }
+          { icon: SiPostman, color: "#ff6c37", label: "Postman" },
+          { icon: SiGithub, color: "#181717", label: "GitHub" },
+          { icon: SiFigma, color: "#f24e1e", label: "Figma" },
+          { icon: SiDocker, color: "#2496ED", label: "Docker" },
+          { icon: SiFilezilla, color: "#BF0000", label: "FileZilla" },
+        ],
+      },
     ],
     [t]
   );
@@ -101,11 +117,21 @@ function App() {
         innerScale={1.5}
         outerScale={5}
         outerStyle={{ border: "3px solid #fff", zIndex: 9999 }}
-        clickables={["a", "input", "label", "select", "textarea", "button", ".link"]}
+        clickables={[
+          "a",
+          "input",
+          "label",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
       />
 
       <Navbar />
-      <section id="Home"><Hero /></section>
+      <section id="Home">
+        <Hero />
+      </section>
       {/* ---------- SKILLS ---------- */}
       <section id="skills">
         <h3>{t("app.tech_stack")}</h3>
@@ -121,10 +147,18 @@ function App() {
       </section>
 
       {/* ---------- OTHER SECTIONS ---------- */}
-      <section id="certificate"><Certificate /></section>
-      <section id="number"><Number /></section>
-      <section id="project"><Projects /></section>
-      <section id="contact"><Contact /></section>
+      <section id="certificate">
+        <Certificate />
+      </section>
+      <section id="number">
+        <Number />
+      </section>
+      <section id="project">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
 
       <Footer />
     </>
