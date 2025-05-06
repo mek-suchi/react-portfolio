@@ -1,10 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 
 function Contact() {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: ""
+  });
+  const [submitting, setSubmitting] = useState(false);
+
+  // handler สำหรับเปลี่ยนค่า input
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
+  // handler สำหรับ submit form
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    try {
+      // สร้าง FormData ตามที่ Formspree รองรับ
+      const payload = new FormData();
+      payload.append("firstName", formData.firstName);
+      payload.append("lastName", formData.lastName);
+      payload.append("email", formData.email);
+      payload.append("message", formData.message);
+
+      const res = await fetch("https://formspree.io/f/meoggvdd", {
+        method: "POST",
+        body: payload,
+        headers: {
+          // บอกว่าเรารับ response เป็น JSON
+          "Accept": "application/json"
+        }
+      });
+
+      const json = await res.json();
+      if (res.ok) {
+        alert("📬 ส่งข้อความเรียบร้อยแล้ว ขอบคุณที่ติดต่อมาครับ!");
+        // เคลียร์ฟอร์ม
+        setFormData({ firstName: "", lastName: "", email: "", message: "" });
+      } else {
+        // Formspree จะคืน errors มาเป็น array ของ message
+        const errors = json.errors?.map(err => err.message).join("\n") || json.error;
+        alert("❌ เกิดข้อผิดพลาด:\n" + errors);
+      }
+    } catch (err) {
+      alert("⚠️ ไม่สามารถส่งได้: " + err.message);
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <div id="contact" className={styles.contact_wrapper}>
@@ -17,17 +69,13 @@ function Contact() {
           <p className={styles.contact_address}>
             <FaMapMarkerAlt /> {t("contact.address")}
           </p>
-          <p>
-            <FaPhone /> (+66) 61-641-4625
-          </p>
-          <p>
-            <FaEnvelope /> suchichart.chuttale@gmail.com
-          </p>
+          <p><FaPhone /> (+66) 61-641-4625</p>
+          <p><FaEnvelope /> suchichart.chuttale@gmail.com</p>
         </div>
 
         {/* form */}
         <div className={styles.contact_form}>
-          <form action="https://formspree.io/f/meoggvdd" method="POST">
+          <form onSubmit={handleSubmit}>
             <div className={styles.input_group}>
               <div>
                 <label htmlFor="firstName">{t("contact.form.first")}</label>
@@ -36,6 +84,8 @@ function Contact() {
                   name="firstName"
                   type="text"
                   placeholder={t("contact.form.first_ph")}
+                  value={formData.firstName}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -46,6 +96,8 @@ function Contact() {
                   name="lastName"
                   type="text"
                   placeholder={t("contact.form.last_ph")}
+                  value={formData.lastName}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -57,6 +109,8 @@ function Contact() {
               name="email"
               type="email"
               placeholder={t("contact.form.email_ph")}
+              value={formData.email}
+              onChange={handleChange}
               required
             />
 
@@ -66,13 +120,14 @@ function Contact() {
               name="message"
               rows="8"
               placeholder={t("contact.form.message_ph")}
+              value={formData.message}
+              onChange={handleChange}
               required
             />
 
-            {/* Optional: redirect to thank you page after submit */}
-            {/* <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" /> */}
-
-            <button type="submit">{t("contact.form.send")}</button>
+            <button type="submit" disabled={submitting}>
+              {submitting ? "กำลังส่ง..." : t("contact.form.send")}
+            </button>
           </form>
         </div>
       </div>
