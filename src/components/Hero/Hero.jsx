@@ -2,7 +2,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./Hero.module.css";
-import { FaGithub, FaLinkedinIn, FaFacebookF, FaDownload } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaFacebookF,
+  FaDownload,
+} from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
 
@@ -29,9 +34,7 @@ function Hero() {
                 repeat={Infinity}
               />
             </p>
-            <p className={styles.text_4}>
-              {t("hero.description")}
-            </p>
+            <p className={styles.text_4}>{t("hero.description")}</p>
             <ul className={styles.hero_social}>
               <li>
                 <a
@@ -67,7 +70,7 @@ function Hero() {
                 href="/src/assets/Resume-Suchichiart.pdf"
                 download
               >
-                <FaDownload style={{ marginRight: "8px" }}/>
+                <FaDownload style={{ marginRight: "8px" }} />
                 {t("hero.download_cv")}
               </a>
             </div>
