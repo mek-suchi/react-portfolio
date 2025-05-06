@@ -7,7 +7,7 @@ import styles from "./Number.module.css";
 const stats = [
   { end: 4,  key: "number.intern"    }, // Internship Experience
   { end: 4,  key: "number.projects"  }, // Academic & Practice Projects
-  { end: 21, key: "number.courses"   }, // Completed Courses
+  { end: 10, key: "number.courses"   }, // Completed Courses
   { end: 100,key: "number.motivation"}  // Motivation %
 ];
 
