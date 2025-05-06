@@ -16,9 +16,9 @@ function Projects() {
         title: t("projects.work.title"),
         description: t("projects.work.desc"),
         images: [
-          "/src/assets/img/project/ui-revel-soft/ui-search-id.jpg",
-          "/src/assets/img/project/ui-revel-soft/ui-show-id.jpg",
-          "/src/assets/img/project/ui-revel-soft/ui-view-show.jpg"
+          "https://i.imgur.com/CIMBPEG.jpeg",
+          "https://i.imgur.com/OR6grSJ.jpeg",
+          "https://i.imgur.com/Sidf2aA.jpeg"
         ],
         github: "https://github.com/yourusername/work-progress-tracking-system"
       },
@@ -27,12 +27,12 @@ function Projects() {
         title: t("projects.farm.title"),
         description: t("projects.farm.desc"),
         images: [
-          "/src/assets/img/project/ui-farm-base/add_employee.jpg",
-          "/src/assets/img/project/ui-farm-base/confirm_delete_employee.jpg",
-          "/src/assets/img/project/ui-farm-base/delete_success.jpg",
-          "/src/assets/img/project/ui-farm-base/dropdown_employee.jpg",
-          "/src/assets/img/project/ui-farm-base/view_employee.jpg",
-          "/src/assets/img/project/ui-farm-base/component_date.jpg"
+          "https://i.imgur.com/1tW5esg.jpeg",
+          "https://i.imgur.com/C6EFKKZ.jpeg",
+          "https://i.imgur.com/5vr2J7w.jpeg",
+          "https://i.imgur.com/h34BlDp.jpeg",
+          "https://i.imgur.com/ZnqddvF.jpeg",
+          "https://i.imgur.com/dlLEFGd.jpeg"
         ],
         github: "https://github.com/yourusername/farm-info-system"
       },
@@ -41,16 +41,16 @@ function Projects() {
         title: t("projects.qr.title"),
         description: t("projects.qr.desc"),
         images: [
-          "/src/assets/img/project/ui-food-ordering/account-setting.jpg",
-          "/src/assets/img/project/ui-food-ordering/dashboard.jpg",
-          "/src/assets/img/project/ui-food-ordering/employee-manage.jpg",
-          "/src/assets/img/project/ui-food-ordering/food-manage.jpg",
-          "/src/assets/img/project/ui-food-ordering/mobile-food-ordering.jpg",
-          "/src/assets/img/project/ui-food-ordering/order-status.jpg",
-          "/src/assets/img/project/ui-food-ordering/profile.jpg",
-          "/src/assets/img/project/ui-food-ordering/qr-code-status.jpg",
-          "/src/assets/img/project/ui-food-ordering/qr-generator.jpg",
-          "/src/assets/img/project/ui-food-ordering/table-manage.jpg"
+          "https://i.imgur.com/k03Vf9Z.jpeg",
+          "https://i.imgur.com/1ed3Ycj.jpeg",
+          "https://i.imgur.com/0cKxL5W.jpeg",
+          "https://i.imgur.com/RJygzLs.jpeg",
+          "https://i.imgur.com/GqkJ36V.jpeg",
+          "https://i.imgur.com/XZTHn35.jpeg",
+          "https://i.imgur.com/UXJyDoH.jpeg",
+          "https://i.imgur.com/KVSdiis.jpeg",
+          "https://i.imgur.com/bKLHOft.jpeg",
+          "https://i.imgur.com/dhoTUUc.jpeg"
         ],
         github: "https://github.com/yourusername/qr-food-ordering-system"
       }
