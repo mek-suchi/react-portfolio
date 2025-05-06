@@ -27,12 +27,13 @@ function Contact() {
 
         {/* form */}
         <div className={styles.contact_form}>
-          <form>
+          <form action="https://formspree.io/f/meoggvdd" method="POST">
             <div className={styles.input_group}>
               <div>
                 <label htmlFor="firstName">{t("contact.form.first")}</label>
                 <input
                   id="firstName"
+                  name="firstName"
                   type="text"
                   placeholder={t("contact.form.first_ph")}
                   required
@@ -42,6 +43,7 @@ function Contact() {
                 <label htmlFor="lastName">{t("contact.form.last")}</label>
                 <input
                   id="lastName"
+                  name="lastName"
                   type="text"
                   placeholder={t("contact.form.last_ph")}
                   required
@@ -52,6 +54,7 @@ function Contact() {
             <label htmlFor="email">{t("contact.form.email")}</label>
             <input
               id="email"
+              name="email"
               type="email"
               placeholder={t("contact.form.email_ph")}
               required
@@ -60,10 +63,14 @@ function Contact() {
             <label htmlFor="message">{t("contact.form.message")}</label>
             <textarea
               id="message"
+              name="message"
               rows="8"
               placeholder={t("contact.form.message_ph")}
               required
             />
+
+            {/* Optional: redirect to thank you page after submit */}
+            {/* <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" /> */}
 
             <button type="submit">{t("contact.form.send")}</button>
           </form>
