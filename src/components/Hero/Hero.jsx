@@ -68,7 +68,7 @@ function Hero() {
               <a
                 className={styles.button}
                 href="https://drive.google.com/uc?export=download&id=1FK6PBPdEdjFuEAYiXghGjcV7qPOwo-tl"
-                download
+                download="Resume-Suchichiart.pdf"
               >
                 <FaDownload style={{ marginRight: "8px" }} />
                 {t("hero.download_cv")}
