@@ -67,7 +67,7 @@ function Hero() {
             <div className={styles.actions}>
               <a
                 className={styles.button}
-                href="https://drive.google.com/uc?export=download&id=1FK6PBPdEdjFuEAYiXghGjcV7qPOwo-tl"
+                href="https://drive.google.com/uc?export=download&id=1ESo79iUbEEncu-NzNucQkqMZ1zgmeoSY"
                 download="Resume-Suchichiart.pdf"
               >
                 <FaDownload style={{ marginRight: "8px" }} />
