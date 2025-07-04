@@ -98,12 +98,11 @@ const certificateData = [
   },
   {
     src: "https://i.imghippo.com/files/BYg8088FSY.png",
-    title: "Advanced For C# Programming​",
-    issuedBy: "FutureSkill",
-    instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
-    completedDate: "23/04/2025",
+    title: "MOS : MS Word 23013 (12 ชั่วโมงการเรียนรู้)​",
+    issuedBy: "ThaiMOOC",
+    instructor: "อาจารย์อรทัย พรหมเพศ",
     certificateLink:
-      "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
+      "https://i.imghippo.com/files/BYg8088FSY.png",
   },
   {
     src: "https://i.imghippo.com/files/kHa7320HyI.png",
