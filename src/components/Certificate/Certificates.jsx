@@ -97,7 +97,7 @@ const certificateData = [
       "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
   },
   {
-    src: "https://i.imghippo.com/files/Vtz3098yEU.jpg",
+    src: "https://i.imghippo.com/files/BYg8088FSY.png",
     title: "Advanced For C# Programming​",
     issuedBy: "FutureSkill",
     instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
@@ -106,7 +106,34 @@ const certificateData = [
       "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
   },
   {
-    src: "https://i.imghippo.com/files/mVJJ1385AGo.jpg",
+    src: "https://i.imghippo.com/files/kHa7320HyI.png",
+    title: "Advanced For C# Programming​",
+    issuedBy: "FutureSkill",
+    instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
+    completedDate: "23/04/2025",
+    certificateLink:
+      "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
+  },
+  {
+    src: "https://i.imghippo.com/files/vg7871ga.png",
+    title: "Advanced For C# Programming​",
+    issuedBy: "FutureSkill",
+    instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
+    completedDate: "23/04/2025",
+    certificateLink:
+      "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
+  },
+  {
+    src: "https://i.imghippo.com/files/Lnz3008gCc.png",
+    title: "Advanced For C# Programming​",
+    issuedBy: "FutureSkill",
+    instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
+    completedDate: "23/04/2025",
+    certificateLink:
+      "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
+  },
+  {
+    src: "https://i.imghippo.com/files/NXA5277YqU.png",
     title: "Advanced For C# Programming​",
     issuedBy: "FutureSkill",
     instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
