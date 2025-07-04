@@ -97,7 +97,7 @@ const certificateData = [
       "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
   },
   {
-    src: "https://i.imgur.com/DeKAEyu.gif",
+    src: "https://i.imghippo.com/files/Vtz3098yEU.jpg",
     title: "Advanced For C# Programming​",
     issuedBy: "FutureSkill",
     instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
