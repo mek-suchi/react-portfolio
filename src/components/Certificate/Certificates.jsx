@@ -97,7 +97,16 @@ const certificateData = [
       "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
   },
   {
-    src: "https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/510437865_1669025417113609_3083689836840303771_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=JJjcP9_XO8gQ7kNvwEA_z96&_nc_oc=AdlXL3j6SXkkCG-L5KGw7DO3N7ycRySGAiXSptLXA_KYwWtMbMhs7F8JqbmA5K0k4eXjstWtO8EofNCjXuvIR88J&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD2wEblG3kSDetGHeg4imdkiQbzpK6jgjm_LLcKQ2jYsTsJA&oe=688EFBAA",
+    src: "https://i.imgur.com/DeKAEyu.gif",
+    title: "Advanced For C# Programming​",
+    issuedBy: "FutureSkill",
+    instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
+    completedDate: "23/04/2025",
+    certificateLink:
+      "https://app.futureskill.co/api/certificate?courseId=310&userId=209620",
+  },
+  {
+    src: "https://scontent.fkkc4-1.fna.fbcdn.net/v/t1.15752-9/513886144_1351766369225938_994381028136645543_n.png?stp=dst-png&cstp=mx1920x985&ctp=s1920x985&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=B2D8BueRQS4Q7kNvwHW6ytv&_nc_oc=AdnfOzxBUO0A9vKDBpBgw5GeaslUKNCv9Yfrq4RY6vlv_CGS2JK8VODZkQkI6Y27L1_s-ZQvrOMWgp2fP33c1KvP&_nc_zt=23&_nc_ht=scontent.fkkc4-1.fna&oh=03_Q7cD2wGSS-reAnMp5Uf_ZJFqAdSAgdAeD9pmaAxDwwW90cdIxw&oe=688F1170",
     title: "Advanced For C# Programming​",
     issuedBy: "FutureSkill",
     instructor: "ผู้ช่วยศาสตราจารย์ บัญญพนต์ พูลสวัสดิ์",
