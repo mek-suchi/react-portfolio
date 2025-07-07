@@ -164,7 +164,14 @@ const certificateData = [
     completedDate: "2021",
     certificateLink: "https://i.imghippo.com/files/KOp8775dDk.jpg",
   },
-
+  {
+    src: "https://i.imghippo.com/files/SRj4361zfc.jpg",
+    title: "อบรมเชิงปฏิบัติการ การเขียนทางวิชาการและการเขียนอ้างอิง",
+    issuedBy: "สำนักวิทยบริการและเทคโนโลยีสารสนเทศ ม.ราชภัฏนครราชสีมา",
+    instructor: "ผู้ช่วยศาสตราจารย์ ภณิดา แก้วกูร",
+    completedDate: "10/01/2024",
+    certificateLink: "https://i.imghippo.com/files/SRj4361zfc.jpg",
+  },
   {
     src: "https://i.imghippo.com/files/vg7871ga.png",
     title: "พื้นฐาน Internet of Things (IoT) (8 ชั่วโมงการเรียนรู้)",
@@ -191,16 +198,6 @@ const certificateData = [
     certificateLink: "https://i.imghippo.com/files/BYg8088FSY.png",
   },
 
-  // --- Design & Academic Skills ---
-  // ทักษะเสริมด้านการออกแบบและการเขียนเชิงวิชาการ
-  {
-    src: "https://i.imghippo.com/files/SRj4361zfc.jpg",
-    title: "อบรมเชิงปฏิบัติการ การเขียนทางวิชาการและการเขียนอ้างอิง",
-    issuedBy: "สำนักวิทยบริการและเทคโนโลยีสารสนเทศ ม.ราชภัฏนครราชสีมา",
-    instructor: "ผู้ช่วยศาสตราจารย์ ภณิดา แก้วกูร",
-    completedDate: "10/01/2024",
-    certificateLink: "https://i.imghippo.com/files/SRj4361zfc.jpg",
-  },
   {
     src: "https://i.imghippo.com/files/kHa7320HyI.png",
     title: "คอมพิวเตอร์กราฟิก (4 ชั่วโมงการเรียนรู้)",
