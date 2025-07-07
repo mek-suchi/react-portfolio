@@ -142,11 +142,29 @@ const certificateData = [
   {
     src: "https://i.imghippo.com/files/OYT4029vs.png",
     title: "ผ่านการทดสอบวัดทักษะ Digital Literacy",
-    issuedBy: "สำนักคอมพิวเตอร์ หม่ย.ราชภัฏนครราชสีมา",
+    issuedBy: "สำนักคอมพิวเตอร์ ม.ราชภัฏนครราชสีมา",
     instructor: "ผู้ช่วยศาสตราจารย์ ดร. อดิศร เนาวนนท์",
     completedDate: "10/01/2024",
     certificateLink: "https://i.imghippo.com/files/OYT4029vs.png",
   },
+
+  {
+    src: "https://i.imghippo.com/files/DDM1689XE.jpg",
+    title: "ได้รับรางวัลเรียนดี ปีการศึกษา 2564",
+    issuedBy: "ม.ราชภัฏนครราชสีมา",
+    instructor: "ผู้ช่วยศาสตราจารย์อุษานาฏ เอื้ออภิสิทธิ์วงศ์",
+    completedDate: "08/07/2021",
+    certificateLink: "https://i.imghippo.com/files/DDM1689XE.jpg",
+  },
+  {
+    src: "https://i.imghippo.com/files/KOp8775dDk.jpg",
+    title: "ได้รับรางวัลชนะเลิศ ทีมถังขนะอัตโนมัติ",
+    issuedBy: "Science Festival NRRU 2021 ม.ราชภัฏนครราชสีมา",
+    instructor: "ผู้ช่วยศาสตราจารย์ ดร.พิเศษ ตู้กลาง",
+    completedDate: "2021",
+    certificateLink: "https://i.imghippo.com/files/KOp8775dDk.jpg",
+  },
+
   {
     src: "https://i.imghippo.com/files/vg7871ga.png",
     title: "พื้นฐาน Internet of Things (IoT) (8 ชั่วโมงการเรียนรู้)",
