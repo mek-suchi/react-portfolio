@@ -125,7 +125,7 @@ function Contact() {
               required
             />
 
-            <button type="submit" disabled={submitting}>
+            <button className={styles.btnSubmit} type="submit" disabled={submitting}>
               {submitting ? "กำลังส่ง..." : t("contact.form.send")}
             </button>
           </form>

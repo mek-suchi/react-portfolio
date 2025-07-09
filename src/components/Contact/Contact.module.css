@@ -90,6 +90,10 @@
     }
 }
 
+.btnSubmit {
+    color: #000;
+}
+
 /* <=480px: full-width */
 @media screen and (max-width: 480px) {
     .contact_wrapper {
@@ -114,6 +118,8 @@
                     display: flex;
                     flex-direction: column;
                 }
+
+
             }
         }
     }
